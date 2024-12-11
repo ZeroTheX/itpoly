@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
-import Carousel from './pages/Carousel';
-import M from './pages/M';
-import NewsSection from './pages/NewsSection';
-import CustomerReviews from './pages/CustomerReviews';
+import Carousel from './pages/Homepages/Carousel';
+import M from './pages/Homepages/M';
+import NewsSection from './pages/Homepages/NewsSection';
+import CustomerReviews from './pages/Homepages/CustomerReviews';
+import Footer from './components/fter';
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
       <NewsSection />
 
       <CustomerReviews />
-      
+
+      <Footer />
+
     </div>
   );
 }
