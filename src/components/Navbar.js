@@ -7,7 +7,7 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "#406E94" }}>
                 <div className="container-fluid">
-                    <a className="navbar-brand ms-5 text-white" href="#"><img src={logo} className="logo-img" alt="First Slide" /></a>
+                    <a className="navbar-brand ms-5 text-white" href="#"><img src="./img/logo.png" className="logo-img" alt="First Slide" /></a>
                     <button
                         className="navbar-toggler"
                         type="button"
