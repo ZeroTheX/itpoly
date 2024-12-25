@@ -1,82 +1,83 @@
-import React from "react";
+import React from 'react';
 
-function RoomDetails() {
+function Room() {
     return (
-        <div className="container my-5">
-            <div className="row">
-                {/* ภาพห้องพัก */}
-                <div className="col-md-8">
-                    <div className="row">
-                        <div className="col-12">
-                            <img src="path_to_main_image.jpg" className="img-fluid rounded" alt="Room" />
-                        </div>
-                        <div className="col-4 mt-2">
-                            <img src="path_to_thumbnail1.jpg" className="img-fluid rounded" alt="Thumbnail 1" />
-                        </div>
-                        <div className="col-4 mt-2">
-                            <img src="path_to_thumbnail2.jpg" className="img-fluid rounded" alt="Thumbnail 2" />
-                        </div>
-                        <div className="col-4 mt-2">
-                            <img src="path_to_thumbnail3.jpg" className="img-fluid rounded" alt="Thumbnail 3" />
-                        </div>
-                    </div>
+            <div className="room-detail-container">
+            <div className="room-images">
+                <img src="./img/RT1.png" alt="Main Room" className="main-image" />
+                <div className="thumbnail-images">
+                    <img src="./img/RT2.png" alt="Room Thumbnail 1" className="thumbnail" />
+                    <img src="./img/RT3.png" alt="Room Thumbnail 2" className="thumbnail" />
+                    <img src="./img/RT4.png" alt="Room Thumbnail 3" className="thumbnail" />
+                    <img src="./img/RT5.png" alt="Room Thumbnail 4" className="thumbnail" />
                 </div>
-
-                {/* การจอง */}
-                <div className="col-md-4">
-                    <div className="card shadow-sm p-3">
-                        <h5>จองห้องพัก</h5>
-                        <form>
-                            <div className="mb-3">
-                                <label className="form-label">วันที่เข้าพัก</label>
-                                <input type="date" className="form-control" />
-                            </div>
-                            <div className="mb-3">
-                                <label className="form-label">จำนวนคืน</label>
-                                <input type="number" className="form-control" />
-                            </div>
-                            <div className="mb-3">
-                                <label className="form-label">จำนวนคน</label>
-                                <input type="number" className="form-control" />
-                            </div>
-                            <button type="submit" className="btn btn-primary w-100">จองเลย</button>
-                        </form>
+            </div>
+            <div className="room-details">
+                <div className="booking-form">
+                    <h3>เลือกวันเข้าพัก</h3>
+                    <form>
+                        <div className="form-group">
+                            <label>วัน</label>
+                            <select>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div className="form-group">
+                            <label>เดือน</label>
+                            <select>
+                                <option>ม.ค.</option>
+                                <option>ก.พ.</option>
+                                <option>มี.ค.</option>
+                            </select>
+                        </div>
+                        <div className="form-group">
+                            <label>ปี</label>
+                            <select>
+                                <option>2567</option>
+                                <option>2568</option>
+                                <option>2569</option>
+                            </select>
+                        </div>
+                        <div className="form-group">
+                            <label>จำนวนคน</label>
+                            <input type="number" min="1" max="10" defaultValue="1" />
+                        </div>
+                        <button type="submit" className="btn-primary">ดูห้องว่าง</button>
+                    </form>
+                </div>
+                <div className="room-description">
+                    <h3>รายละเอียด</h3>
+                    <p>
+                        ห้องนี้เหมาะสำหรับการพักผ่อน พร้อมวิวเมืองที่สวยงามและสิ่งอำนวยความสะดวกครบครัน
+                        เช่น Wi-Fi ฟรี เตียงขนาดใหญ่ และสิ่งอำนวยความสะดวกอื่นๆ ที่ทำให้การพักผ่อนสะดวกสบาย
+                    </p>
+                </div>
+                <div className="room-features">
+                    <h3>สิ่งอำนวยความสะดวก</h3>
+                    <div className="features">
+                        <div>📶 ฟรี Wi-Fi</div>
+                        <div>🛏️ เตียงขนาด 7 ฟุต</div>
+                        <div>🚪 เข้าออก 24 ชั่วโมง</div>
+                        <div>🛁 ฟรี อ่างอาบน้ำและผ้าเช็ดตัว</div>
                     </div>
                 </div>
             </div>
-
-            {/* รายละเอียดห้อง */}
-            <div className="mt-5">
-                <h3>รายละเอียด</h3>
-                <p>
-                    ข้อมูลรายละเอียดเกี่ยวกับห้องพัก เช่น สิ่งอำนวยความสะดวกหรือข้อมูลทั่วไปเกี่ยวกับห้อง
-                </p>
-            </div>
-
-            {/* สิ่งอำนวยความสะดวก */}
-            <div className="mt-5">
-                <h4>สิ่งอำนวยความสะดวก</h4>
-                <div className="row text-center">
-                    <div className="col-3">
-                        <i className="bi bi-wifi fs-1"></i>
-                        <p>Wi-Fi</p>
-                    </div>
-                    <div className="col-3">
-                        <i className="bi bi-tv fs-1"></i>
-                        <p>ทีวี</p>
-                    </div>
-                    <div className="col-3">
-                        <i className="bi bi-cup-hot fs-1"></i>
-                        <p>กาแฟ</p>
-                    </div>
-                    <div className="col-3">
-                        <i className="bi bi-door-open fs-1"></i>
-                        <p>ที่พักกว้าง</p>
-                    </div>
+            <div className="room-reviews">
+                <h3>รีวิวห้องพัก</h3>
+                <div className="review">
+                    <p>ข้อความ: ดีมาก</p>
+                    <p>⭐ ⭐ ⭐ ⭐ ⭐</p>
                 </div>
+                <div className="review">
+                    <p>ข้อความ: สะดวกสบาย</p>
+                    <p>⭐ ⭐ ⭐ ⭐</p>
+                </div>
+                {/* เพิ่มรีวิวเพิ่มเติม */}
             </div>
         </div>
     );
 }
 
-export default RoomDetails;
+export default Room;

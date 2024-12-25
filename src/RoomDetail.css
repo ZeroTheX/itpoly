@@ -1,0 +1,82 @@
+.room-detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.room-images {
+    flex: 1;
+}
+
+.main-image {
+    width: 100%; /* ปรับเป็น 100% ของคอนเทนเนอร์ */
+    height: auto; /* รักษาสัดส่วนของรูป */
+    max-width: 1200px; /* ตั้งขนาดสูงสุดเพื่อป้องกันการขยายเกิน */
+    margin-bottom: 20px; /* เพิ่มระยะห่างด้านล่าง */
+}
+
+.thumbnail-images .thumbnail {
+    width: 125px; /* ขนาดสำหรับรูป thumbnail */
+    height: auto;
+    margin-right: 10px; /* ระยะห่างระหว่าง thumbnail */
+    cursor: pointer; /* ทำให้ชี้เมาส์เป็น pointer */
+}
+
+
+.thumbnail {
+    width: 100px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.room-details {
+    flex: 2;
+}
+
+.booking-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.btn-primary {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.room-description,
+.room-features,
+.room-reviews {
+    margin-bottom: 20px;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
