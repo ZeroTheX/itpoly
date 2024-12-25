@@ -17,7 +17,7 @@ function App() {
             <div className="App">
                 <Navbar />
                 <Routes>
-                    <Route path="/index" element={
+                    <Route path="/" element={
                         <>
                             <Carousel />
                             <M />
