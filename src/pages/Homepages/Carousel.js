@@ -1,4 +1,8 @@
 import React from "react";
+import img1 from '../img/image1.png';
+import img2 from '../img/image1.png';
+import img3 from '../img/image1.png';
+
 
 function Carousel() {
     return (
@@ -11,13 +15,13 @@ function Carousel() {
                 </div>
                 <div className="carousel-inner mt-5">
                     <div className="carousel-item active">
-                        <img src="./img/image1.png" className="small-img" alt="First Slide" />
+                        <img src={img1} className="small-img" alt="First Slide" />
                     </div>
                     <div className="carousel-item">
-                        <img src="./img/image2.png" className="small-img" alt="Second Slide" />
+                        <img src={img2} className="small-img" alt="Second Slide" />
                     </div>
                     <div className="carousel-item">
-                        <img src="./img/image3.png" className="small-img" alt="Third Slide" />
+                        <img src={img3} className="small-img" alt="Third Slide" />
                     </div>
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
